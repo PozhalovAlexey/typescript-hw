@@ -1,4 +1,3 @@
-import Cart from "./cart";
 import Buyable from "./buyable";
 
 export default class Movie implements Buyable {
