@@ -1,5 +1,5 @@
 import Cart from "./cart";
-import {Buyable} from "./buyable";
+import Buyable from "./buyable";
 
 export default class Movie implements Buyable {
     constructor(
@@ -7,11 +7,11 @@ export default class Movie implements Buyable {
         public name: string,
         public year: number,
         public price: number,
-        public discount?: number,
         public country: string,
         public tagline: string,
         public genres: string[],
-        public duration: number
+        public duration: number,
+        public discount?: number,
     ) {
     }
 }

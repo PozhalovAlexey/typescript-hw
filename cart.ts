@@ -31,5 +31,5 @@ export default class Cart {
     }
 }
 const cart = new Cart()
-const movie = new Movie(1, 'True detective', 2014, 1000000, 5, 'USA', 'Search', ['detective', 'tragedy'], 456);
+const movie = new Movie(1, 'True detective', 2014, 1000000, 'USA', 'Search', ['detective', 'tragedy'],416,  5);
 cart.add(movie)
