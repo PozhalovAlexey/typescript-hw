@@ -13,11 +13,7 @@ export default class Cart {
     }
 
     getTotalCost(): number {
-        let totalCost = 0;
-        for (const item of this._items) {
-            totalCost += item.price
-        }
-        return totalCost
+        return this._items.reduce((totalCost, item) => totalCost + item.price, 0);
     }
 
     getTotalCostWithDiscount(discount: number): number {
@@ -31,5 +27,5 @@ export default class Cart {
     }
 }
 const cart = new Cart()
-const movie = new Movie(1, 'True detective', 2014, 1000000, 'USA', 'Search', ['detective', 'tragedy'],416,  5);
+const movie = new Movie(1, 'True detective', 2014, 1000000, 'USA', 'Search', ['detective', 'tragedy'], 416, 5);
 cart.add(movie)
